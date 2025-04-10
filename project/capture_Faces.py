@@ -17,13 +17,14 @@ drawing_spec = mp_drawing.DrawingSpec(color=(255, 0, 0), thickness=2)
 no_landmarks_spec = mp_drawing.DrawingSpec(color=(0, 0, 0), thickness=0, circle_radius=0)
 
 
-def capture_faces(user):
+def capture_faces(user,roll_number):
     user = user.strip()
+    roll_number = roll_number.strip()
     if not user:
         print("⚠️ Username cannot be empty!")
         return
 
-    path = f'./project/faces/{user}'
+    path = f'./project/faces/{roll_number}_{user}'
 
     # ✅ Check/create folder
     try:
@@ -104,4 +105,5 @@ def capture_faces(user):
 
 if __name__ == "__main__":
     user = input('Username : ')
-    capture_faces(user)
+    roll = input('Roll : ')
+    capture_faces(user,roll)
