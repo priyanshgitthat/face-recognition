@@ -1,4 +1,4 @@
-# Face Recognition Attendance System 👨💻📊
+# 👨‍💻 Face Recognition Attendance System
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-orange)
@@ -7,89 +7,97 @@
 
 An automated attendance system using facial recognition technology that marks attendance by detecting and recognizing faces in real-time.
 
-## Features ✨
+---
 
-- **Face Registration**: Capture and store multiple face images with name and roll number
-- **Model Training**: Generate facial encodings for recognition
-- **Attendance Marking**: Automatically records attendance with timestamp
-- **Duplicate Prevention**: Ensures each person is marked only once per session
-- **CSV Export**: Saves attendance records in spreadsheet format
+## ✨ Features
+
+- **Face Registration**: Capture and store multiple face images with name and roll number  
+- **Model Training**: Generate facial encodings for recognition  
+- **Attendance Marking**: Automatically records attendance with timestamp  
+- **Duplicate Prevention**: Ensures each person is marked only once per session  
+- **CSV Export**: Saves attendance records in spreadsheet format  
 - **Real-time Preview**: Displays recognition results with visual feedback
 
-## Screenshots 🖼️
+---
+
+## 🖼️ Screenshots
 
 <div align="center">
-  <img src="./assets/Screenshot (38).png" width="45%">
-  <img src="./assets/Screenshot (39).png" width="45%">
-  <img src="./assets/Screenshot (40).png" width="45%">
-  <img src="./assets/Screenshot (41).png" width="45%">
-  <img src="./assets/Screenshot (42).png" width="45%">
-  <img src="./assets/Screenshot (43).png" width="45%">
-  <img src="./assets/Screenshot (44).png" width="45%">
-  <img src="./assets/Screenshot (45).png" width="45%">
-  <img src="./assets/Screenshot (46).png" width="45%">
+
+<img src="./assets/Screenshot (38).png" width="45%">  
+<img src="./assets/Screenshot (39).png" width="45%">  
+<img src="./assets/Screenshot (40).png" width="45%">  
+<img src="./assets/Screenshot (41).png" width="45%">  
+<img src="./assets/Screenshot (42).png" width="45%">  
+<img src="./assets/Screenshot (43).png" width="45%">  
+<img src="./assets/Screenshot (44).png" width="45%">  
+<img src="./assets/Screenshot (45).png" width="45%">  
+<img src="./assets/Screenshot (46).png" width="45%">
 
 </div>
 
-## Installation 🛠️
+---
 
-1. Clone the repository:
+## 🛠️ Installation
+
+1. **Clone the repository**  
 ```bash
 git clone https://github.com/priyanshgitthat/face-recognition.git
 cd face-recognition
+```
 
-    Create and activate virtual environment:
-
-
-
+2. **Create and activate a virtual environment**  
+```bash
+# Windows
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate    # Windows
+venv\Scripts\activate
 
-    Install dependencies:
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+```
 
-
-
+3. **Install dependencies**  
+```bash
 pip install -r requirements.txt
+```
 
-Usage 🚀
+---
 
-    Register New Faces:
+## 🚀 Usage
 
-
-
+### 1. Register New Faces  
+```bash
 python registerFaces.py
+```
+- Enter name and roll number when prompted  
+- System will capture 100 high-quality face images  
+- Press `Q` to stop early  
 
-    Enter name and roll number when prompted
+---
 
-    System will capture 100 high-quality face images
-
-    Press 'Q' to stop early
-
-    Train the Model:
-
-
+### 2. Train the Model  
+```bash
 python encoding.py
+```
+- Generates facial encodings from captured images  
+- Saves to `random_encodings.pkl`
 
-    Generates facial encodings from captured images
+---
 
-    Saves to random_encodings.pkl
-
-    Run Attendance System:
-
-
-
+### 3. Run Attendance System  
+```bash
 python recognizeFaces.py
+```
+- Detects faces and marks attendance automatically  
+- Records to `attendance.csv` with timestamp  
+- Press `Q` to exit
 
-    Detects faces and marks attendance automatically
+---
 
-    Records to attendance.csv with timestamp
+## 📂 File Structure
 
-    Press 'Q' to exit
-
-File Structure 📂
-
-
+```
 face-recognition/
 ├── faces/                  # Folder containing registered face images
 ├── attendance.csv          # Attendance records
@@ -99,37 +107,59 @@ face-recognition/
 ├── recognizeFaces.py       # Attendance marking script
 ├── gui.py                  # Graphical user interface
 └── requirements.txt        # Dependencies
+```
 
-Technical Details 🔧
+---
 
-    Uses MediaPipe for high-accuracy face detection
+## 🔧 Technical Details
 
-    Implements face_recognition library for facial feature extraction
+- Uses **MediaPipe** for high-accuracy face detection  
+- Implements `face_recognition` library for facial feature extraction  
+- Applies **CLAHE** and **sharpening filters** for image enhancement  
+- CSV output includes: **Name**, **Roll Number**, **Date**, **Time**  
+- Optimized for real-time performance with **frame skipping**
 
-    Applies CLAHE and sharpening filters for image enhancement
+---
 
-    CSV output includes: Name, Roll Number, Date, Time
+## 🤝 Contributing
 
-    Optimized for real-time performance with frame skipping
+Contributions are welcome!  
+Feel free to open an **issue** or submit a **pull request** for:
 
-Contributing 🤝
+- 🐛 Bug fixes  
+- ✨ Feature enhancements  
+- ⚡ Performance improvements
 
-Contributions are welcome! Please open an issue or PR for any:
+---
 
-    Bug fixes
+## 📬 Connect with Me
 
-    Feature enhancements
+<div align="left">
 
-    Performance improvements
+<a href="mailto:priyanshverma157@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
 
-Connect with Me 📬
-## 📩 Contact
-📧 **Your Name** – [priyanshverma157@gmail.com](mailto:priyanshverma157@gmail.com)  
-🔗 **GitHub** – [github.com/priyanshgitthat](https://github.com/priyanshgitthat)  
-🔗 **LinkedIn** – [linkedin.com/in/Priyansh Verma](https://www.linkedin.com/in/priyanshv/)  
-🔗 **Portfolio** – [priyanshverma.netlify.app](https://priyanshverma.netlify.app/)  
-License 📜
+<a href="https://www.linkedin.com/in/priyanshv/">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+<a href="https://priyanshverma.netlify.app/">
+  <img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139" alt="Portfolio">
+</a>
 
-Developed with ❤️ by Priyansh
+<a href="https://github.com/priyanshgitthat">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+
+</div>
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+
+---
+
+👨‍💻 Developed with ❤️ by **Priyansh Verma**
