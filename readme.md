@@ -123,16 +123,7 @@ Contributions are welcome! Please open an issue or PR for any:
     Performance improvements
 
 Connect with Me 📬
-<div align="left"> 
-<a href="mailto:.com"> 
-<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"> </a> 
-<a href="https://www.linkedin.com/in/priyanshv/"> 
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"> </a> 
-<a href="https://priyanshverma.netlify.app/"> 
-<img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139" alt="Portfolio"> </a> 
-<a href="https://github.com/priyanshgitthat"> 
-<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> 
-</a> </div>
+<div align="left"> <a href="mailto:priyanshverma157@gmail.com"> <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"> </a> <a href="https://www.linkedin.com/in/priyanshv/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"> </a> <a href="https://priyanshverma.netlify.app/"> <img src="https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=firefox&logoColor=#FF7139" alt="Portfolio"> </a> <a href="https://github.com/priyanshgitthat"> <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> </a> </div>
 License 📜
 
 This project is licensed under the MIT License - see the LICENSE file for details.
